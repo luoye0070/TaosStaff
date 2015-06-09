@@ -16,6 +16,7 @@ import com.lj.taosstaff.dataload.AfterAction;
 import com.lj.taosstaff.dataload.BeforeAction;
 import com.lj.taosstaff.dataload.DataLoadHelper;
 import com.lj.taosstaff.internet.ParamCollect;
+import com.lj.taosstaff.model.InternetEnv;
 import com.lj.taosstaff.model.UserInfo;
 import com.lj.taosstaff.service.MessageService;
 import com.lj.taosstaff.string_analysis.AnalyzeHelper;
@@ -121,9 +122,12 @@ public class LoginActivity extends Activity {
 					login(restaurantId,userName, passWd);
 					break;
 				case R.id.loginAy_registerBt:
-					Uri uri=Uri.parse("http://user.xjmei.com/person/reg");
-					Intent it=new Intent(Intent.ACTION_VIEW, uri);
-					LoginActivity.this.startActivity(it);
+//					Uri uri=Uri.parse("http://user.xjmei.com/person/reg");
+//					Intent it=new Intent(Intent.ACTION_VIEW, uri);
+//					LoginActivity.this.startActivity(it);
+					Intent intent=new Intent();
+					intent.setClass(LoginActivity.this, SettingActivity.class);
+					startActivity(intent);
 					break;
 				}
 			} catch (Exception e) {
@@ -134,7 +138,7 @@ public class LoginActivity extends Activity {
 	}
 	private void login(String restaurantId,String userName,String passWd)
 	{
-		String url_s=AppConstant.UrlStrs.URL_LOGIN;
+		String url_s=new InternetEnv().getBaseUrl(getApplicationContext())+"/staffManageAjax/staffLogin";//AppConstant.UrlStrs.URL_LOGIN;
 		ParamCollect pc=new ParamCollect();		
 		String appkey=AppConstant.AppSafety.USER_APPKEY;
 		pc.addOrSetParam(AppConstant.HttpRequestParamName.LOGIN_RESTAURANT_ID, restaurantId);

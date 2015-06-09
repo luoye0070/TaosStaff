@@ -92,7 +92,7 @@ public class MainNavbarMenu {
 		
 		mainNavbar_mainPageBt=(Button) a.findViewById(R.id.mainNavbar_mainPageBt);
 		//mainNavbar_orderListBt=(Button) a.findViewById(R.id.mainNavbar_orderListBt);;//我的订单
-		//mainNavbar_dishListBt=(Button) a.findViewById(R.id.mainNavbar_dishListBt);;//我的收藏
+		mainNavbar_dishListBt=(Button) a.findViewById(R.id.mainNavbar_dishListBt);;//
 		//mainNavbar_reserveBt=(Button) a.findViewById(R.id.mainNavbar_reserveBt);;// 预定桌位
 		
 		switch(this.aIndex)
@@ -156,7 +156,7 @@ public class MainNavbarMenu {
 				loginIntent.setClass(a, LoginActivity.class);
 				loginIntent.putExtra(AppConstant.IntentExtraName.IN_LOGIN_FROM_BT, true);
 				a.startActivity(loginIntent);
-				a.finish();
+				//a.finish();
 			}
 		});
 		

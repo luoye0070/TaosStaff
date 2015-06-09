@@ -53,41 +53,42 @@ public interface AppConstant {
 		public final static String URL_UPDATEFILEPATH="http://www.canmeng.com/android/";
 		public final static String URL_HOST="";
 //		//测试环境
-		public final static String URL_LOGIN="http://42.96.176.228:80/staffManageAjax/staffLogin";//工作人员登录请求地址
-		public final static String URL_CREATE_ORDER="http://42.96.176.228:80/staffAjax/createOrder";//创建订单
-		public final static String URL_DATA_OF_DISH="http://42.96.176.228:80/staffAjax/dataOfDish";//加载点菜所需数据
-		public final static String URL_ADD_DISHS="http://42.96.176.228:80/staffAjax/addDishes";//点菜
-		public final static String URL_COMPLETE_DISH="http://42.96.176.228:80/staffAjax/completeDish";//完成点菜
-		public final static String URL_ORDER_LIST="http://42.96.176.228:80/staffAjax/orderList";//订单列表
-		public final static String URL_ORDER_DETAIL="http://42.96.176.228:80/staffAjax/orderShow";//订单详情
-		public final static String URL_CANCEL_DISH="http://42.96.176.228:80/staffAjax/cancelDish";//取消点菜
-		public final static String URL_DEL_DISH="http://42.96.176.228:80/staffAjax/delDish";//删除点菜
-		public final static String URL_AFFIRM_DISH="http://42.96.176.228:80/staffAjax/affirmDish";//确认点菜
-		public final static String URL_COMPLETE_SERVE_DISH="http://42.96.176.228:80/staffAjax/completeServe";//完成上菜
-		public final static String URL_BEGIN_COOK_DISH="http://42.96.176.228:80/staffAjax/beginCook";//完成上菜
-		public final static String URL_COMPLETE_COOK_DISH="http://42.96.176.228:80/staffAjax/completeCook";//完成上菜
+//		public static String URL_BASE="http://42.96.176.228:80/";
+//		public static String URL_LOGIN=URL_BASE+"/staffManageAjax/staffLogin";//工作人员登录请求地址
+//		public final static String URL_CREATE_ORDER="http://42.96.176.228:80/staffAjax/createOrder";//创建订单
+//		public final static String URL_DATA_OF_DISH="http://42.96.176.228:80/staffAjax/dataOfDish";//加载点菜所需数据
+//		public final static String URL_ADD_DISHS="http://42.96.176.228:80/staffAjax/addDishes";//点菜
+//		public final static String URL_COMPLETE_DISH="http://42.96.176.228:80/staffAjax/completeDish";//完成点菜
+//		public final static String URL_ORDER_LIST="http://42.96.176.228:80/staffAjax/orderList";//订单列表
+//		public final static String URL_ORDER_DETAIL="http://42.96.176.228:80/staffAjax/orderShow";//订单详情
+//		public final static String URL_CANCEL_DISH="http://42.96.176.228:80/staffAjax/cancelDish";//取消点菜
+//		public final static String URL_DEL_DISH="http://42.96.176.228:80/staffAjax/delDish";//删除点菜
+//		public final static String URL_AFFIRM_DISH="http://42.96.176.228:80/staffAjax/affirmDish";//确认点菜
+//		public final static String URL_COMPLETE_SERVE_DISH="http://42.96.176.228:80/staffAjax/completeServe";//完成上菜
+//		public final static String URL_BEGIN_COOK_DISH="http://42.96.176.228:80/staffAjax/beginCook";//完成上菜
+//		public final static String URL_COMPLETE_COOK_DISH="http://42.96.176.228:80/staffAjax/completeCook";//完成上菜
+//		
+//		public final static String URL_CANCEL_ORDER="http://42.96.176.228:80/staffAjax/cancelOrder";//取消订单
+//		public final static String URL_DEL_ORDER="http://42.96.176.228:80/staffAjax/delOrder";//删除订单
+//		public final static String URL_AFFIRM_VALID_ORDER="http://42.96.176.228:80/staffAjax/affirmValid";//确认订单有效
+//		public final static String URL_COMPLETE_AFFIRM_DISH_ORDER="http://42.96.176.228:80/staffAjax/completeAffirmDish";//确认点菜完成
+//		public final static String URL_GET_ACCOUNTS="http://42.96.176.228:80/staffAjax/getAccounts";//算账
+//		public final static String URL_SETTLE_ACCOUNT_ORDER="http://42.96.176.228:80/staffAjax/settleAccounts";//提交算账
+//		public final static String URL_DISH_LIST="http://42.96.176.228:80/staffAjax/dishList";//点菜列表，主要厨师用
+//		
+//		
+//		public final static String URL_APPRAISE_ORDER="http://42.96.176.228:80/customerAjax/appraiseOrder";//评价订单
+//		public final static String URL_FOOD_DETAIL="http://42.96.176.228:80/infoShowInM/foodShow";//菜品详情
+//		public final static String URL_MY_COLLECT="http://42.96.176.228:80/userAjax/myFavorites";//收藏列表
+//		public final static String URL_DEL_COLLECT="http://42.96.176.228:80/userAjax/delFavorite";//删除收藏
+//		public final static String URL_SHOP_LIST="http://42.96.176.228:80/searchAjax/searchShop";//饭店列表
+//		public final static String URL_TABLE_LIST="http://42.96.176.228:80/searchAjax/searchTablesInShop";//桌位列表
+//		public final static String URL_TABLE_RESERVE="http://42.96.176.228:80/staffAjax/reserveTable";//桌位预定
+//		
+		public static String URL_IMAGE_THUMBNAIL="http://42.96.176.228:80/imageShow/downloadThumbnail";//缩略图下载地址
 		
-		public final static String URL_CANCEL_ORDER="http://42.96.176.228:80/staffAjax/cancelOrder";//取消订单
-		public final static String URL_DEL_ORDER="http://42.96.176.228:80/staffAjax/delOrder";//删除订单
-		public final static String URL_AFFIRM_VALID_ORDER="http://42.96.176.228:80/staffAjax/affirmValid";//确认订单有效
-		public final static String URL_COMPLETE_AFFIRM_DISH_ORDER="http://42.96.176.228:80/staffAjax/completeAffirmDish";//确认点菜完成
-		public final static String URL_GET_ACCOUNTS="http://42.96.176.228:80/staffAjax/getAccounts";//算账
-		public final static String URL_SETTLE_ACCOUNT_ORDER="http://42.96.176.228:80/staffAjax/settleAccounts";//提交算账
-		public final static String URL_DISH_LIST="http://42.96.176.228:80/staffAjax/dishList";//点菜列表，主要厨师用
-		
-		
-		public final static String URL_APPRAISE_ORDER="http://42.96.176.228:80/customerAjax/appraiseOrder";//评价订单
-		public final static String URL_FOOD_DETAIL="http://42.96.176.228:80/infoShowInM/foodShow";//菜品详情
-		public final static String URL_MY_COLLECT="http://42.96.176.228:80/userAjax/myFavorites";//收藏列表
-		public final static String URL_DEL_COLLECT="http://42.96.176.228:80/userAjax/delFavorite";//删除收藏
-		public final static String URL_SHOP_LIST="http://42.96.176.228:80/searchAjax/searchShop";//饭店列表
-		public final static String URL_TABLE_LIST="http://42.96.176.228:80/searchAjax/searchTablesInShop";//桌位列表
-		public final static String URL_TABLE_RESERVE="http://42.96.176.228:80/staffAjax/reserveTable";//桌位预定
-		
-		public final static String URL_IMAGE_THUMBNAIL="http://42.96.176.228:80/imageShow/downloadThumbnail";//缩略图下载地址
-		
-		public final static String URL_GET_MESSAGE="http://42.96.176.228:80/messageAjax/getMsg";//消息接收
-		public final static String IP_MESSAGE_SERVER="42.96.176.228";
+//		public final static String URL_GET_MESSAGE="http://42.96.176.228:80/messageAjax/getMsg";//消息接收
+//		public static String IP_MESSAGE_SERVER="42.96.176.228";
 		public final static int PORT_MESSAGE_SERVER=5000;
 		
 		

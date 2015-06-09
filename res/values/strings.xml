@@ -17,13 +17,13 @@
 
     <!-- 登录界面 -->
     <string name="loginAy_titleTvTxt">工作人员登录</string>
-    <string name="loginAy_restaurantIdLable">饭店：</string>
+    <string name="loginAy_restaurantIdLable">饭店IP：</string>
     <string name="loginAy_userNameLable">用户名：</string>
     <string name="loginAy_passwdLable">密码：</string>
     <string name="loginAy_autoLoginCbTxt">自动登录</string>
     <string name="loginAy_loginBtTxt">登录</string>
-    <string name="loginAy_registerBtTxt">注册</string>
-    <string name="loginAy_restaurantIdHintTxt">请输入饭店ID</string>
+    <string name="loginAy_registerBtTxt">设置网络</string>
+    <string name="loginAy_restaurantIdHintTxt">请输入饭店IP</string>
     <string name="loginAy_userNameHintTxt">请输入用户名</string>
     <string name="loagiAy_passwdHintTxt">请输入密码</string>
     
@@ -79,5 +79,16 @@
     <string name="loadingMore">正在努力为您加载，请稍后&#8230;&#8230;</string>
     <string name="money_yuan">元</string>
     <string name="gobackBtTxt">返回</string>
+    
+    <!-- 设置界面 -->
+    <string name="settingAy_titleTvTxt">设置</string>
+    <string name="settingAy_restaurantIdLable">服务器IP：</string>
+    <string name="settingAy_userNameLable">基本URL：</string>
+
+    <string name="settingAy_loginBtTxt">设置</string>
+    <string name="settingAy_registerBtTxt">注册</string>
+    <string name="settingAy_restaurantIdHintTxt">请输入饭店IP</string>
+    <string name="settingAy_userNameHintTxt">请输入基本URL</string>
+    <string name="settingAy_passwdHintTxt">请输入密码</string>
     
 </resources>

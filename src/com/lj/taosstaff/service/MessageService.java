@@ -16,6 +16,7 @@ import com.lj.taosstaff.database.DatabaseHelper;
 import com.lj.taosstaff.internet.HttpClientHelper;
 import com.lj.taosstaff.internet.ParamCollect;
 import com.lj.taosstaff.internet.ParamsCollect;
+import com.lj.taosstaff.model.InternetEnv;
 import com.lj.taosstaff.model.MessageInfo;
 import com.lj.taosstaff.model.UserInfo;
 import com.lj.taosstaff.string_analysis.DataOfMessageAnalyzeHelper;
@@ -203,7 +204,7 @@ public class MessageService extends Service {
 				notifyMsg(content,notificationIntent,0,false);
 				return;
 			}
-			String serverIp=AppConstant.UrlStrs.IP_MESSAGE_SERVER;
+			String serverIp=new InternetEnv().getHostIP(getApplicationContext());//AppConstant.UrlStrs.IP_MESSAGE_SERVER;
 			int serverPort=AppConstant.UrlStrs.PORT_MESSAGE_SERVER;
 			int userType=0;//这里和服务端协定，0表示工作人员，1表示顾客
 			minaClient=new MinaClient(serverIp, serverPort, 30000, "UTF-8", "\n", "\n", "phone123","sn123",true,ui.userId, userType, new AnalyzeHelper() {

@@ -7,6 +7,15 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +36,15 @@
         </activity>
         <activity android:name="com.lj.taosstaff.LoginActivity"></activity>
         <activity android:name="com.lj.taosstaff.MainActivity"></activity>
+        <activity android:name="com.lj.taosstaff.SettingActivity"></activity>
+        <activity android:name="com.lj.taosstaff.DishListActivity"></activity>
+        
+        <service android:name="com.lj.taosstaff.service.MessageService" 
+    	    android:exported="false" 
+    	    android:process=":msg">
+    	    <intent-filter android:priority="1000"></intent-filter>
+    	</service>
+    	<service android:name="com.lj.taosstaff.service.BroadcastService" android:process=":br"></service>
     </application>
 
 </manifest>

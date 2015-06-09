@@ -7,6 +7,7 @@ import com.lj.taosstaff.LoginActivity;
 import com.lj.taosstaff.common.ActivityCallBackInterface;
 import com.lj.taosstaff.common.AcvivityLoginGoto;
 import com.lj.taosstaff.common.StaticData;
+import com.lj.taosstaff.model.InternetEnv;
 import com.lj.taosstaff.model.UserInfo;
 
 import com.lj.taosstaff.R;
@@ -406,7 +407,7 @@ public class DataLoadHelper {
 					ui.readFromSharedPreferences(a.getApplicationContext());
 					if(ui.getUserId()>0)
 					{//自动登录,然后重新加载数据
-						String url_s=AppConstant.UrlStrs.URL_LOGIN;
+						String url_s=new InternetEnv().getBaseUrl(a.getApplicationContext())+"/staffManageAjax/staffLogin";//AppConstant.UrlStrs.URL_LOGIN;
 						ParamCollect pc=new ParamCollect();		
 						String appkey=AppConstant.AppSafety.USER_APPKEY;
 						pc.addOrSetParam(AppConstant.HttpRequestParamName.LOGIN_RESTAURANT_ID, ui.restaurantId);
