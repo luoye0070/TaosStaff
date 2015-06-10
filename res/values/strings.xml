@@ -66,6 +66,7 @@
      <!-- 主菜单相关 -->
     <string name="mainNavbar_mainPageBtTxt">首页</string>
     <string name="mainNavbar_dishListBtTxt">点菜列表</string>
+    <string name="mainNavbar_reserveBtTxt">消息</string>
     
     <!-- 点菜列表界面 -->
     <string name="dlAy_titleTvTxt">点菜列表</string>

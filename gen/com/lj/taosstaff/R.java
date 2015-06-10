@@ -53,25 +53,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int navbar_menu_mainpage_press=0x7f02001c;
         public static final int navbar_menu_mainpage_selector=0x7f02001d;
         public static final int navbar_menu_mainpage_unpress=0x7f02001e;
-        public static final int navbar_menu_notify=0x7f02001f;
-        public static final int normal_button_selector=0x7f020020;
-        public static final int normal_button_selector1=0x7f020021;
-        public static final int not_found=0x7f020022;
-        public static final int radio_bt_checked_bk=0x7f020023;
-        public static final int radio_bt_unchecked_bk=0x7f020024;
-        public static final int radio_button_selector=0x7f020025;
-        public static final int staff_app_ico=0x7f020026;
-        public static final int stroke_orange_corners_white=0x7f020027;
-        public static final int top_bk=0x7f020028;
-        public static final int top_bk_bitmap=0x7f020029;
-        public static final int welcom_bak=0x7f02002a;
+        public static final int navbar_menu_message_press=0x7f02001f;
+        public static final int navbar_menu_message_selector=0x7f020020;
+        public static final int navbar_menu_message_unpress=0x7f020021;
+        public static final int navbar_menu_notify=0x7f020022;
+        public static final int normal_button_selector=0x7f020023;
+        public static final int normal_button_selector1=0x7f020024;
+        public static final int not_found=0x7f020025;
+        public static final int radio_bt_checked_bk=0x7f020026;
+        public static final int radio_bt_unchecked_bk=0x7f020027;
+        public static final int radio_button_selector=0x7f020028;
+        public static final int staff_app_ico=0x7f020029;
+        public static final int stroke_orange_corners_white=0x7f02002a;
+        public static final int top_bk=0x7f02002b;
+        public static final int top_bk_bitmap=0x7f02002c;
+        public static final int welcom_bak=0x7f02002d;
     }
     public static final class id {
         public static final int dummy_button=0x7f080002;
         public static final int fullscreen_content=0x7f080000;
         public static final int fullscreen_content_controls=0x7f080001;
-        public static final int lmli_contentTv=0x7f080023;
-        public static final int lmli_rtimeTv=0x7f080022;
+        public static final int lmli_contentTv=0x7f080025;
+        public static final int lmli_rtimeTv=0x7f080024;
         public static final int loadProgress=0x7f08000d;
         public static final int loadProgressH=0x7f08000a;
         public static final int loadingMoreTv=0x7f080017;
@@ -83,19 +86,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int loginAy_userNameAt=0x7f080004;
         public static final int mainAy_gsWv=0x7f08000b;
         public static final int mainAy_title=0x7f080009;
-        public static final int mainNavbar_dishListBt=0x7f08001f;
-        public static final int mainNavbar_dishListFl=0x7f08001e;
-        public static final int mainNavbar_dishListNotifyTv=0x7f080020;
-        public static final int mainNavbar_hsv=0x7f08001a;
+        public static final int mainNavbar_dishListBt=0x7f08001e;
+        public static final int mainNavbar_dishListFl=0x7f08001d;
+        public static final int mainNavbar_dishListNotifyTv=0x7f08001f;
         public static final int mainNavbar_loginBt=0x7f080018;
-        public static final int mainNavbar_mainPageBt=0x7f08001c;
-        public static final int mainNavbar_mainPageFl=0x7f08001b;
-        public static final int mainNavbar_mainPageNotifyTv=0x7f08001d;
+        public static final int mainNavbar_mainPageBt=0x7f08001b;
+        public static final int mainNavbar_mainPageFl=0x7f08001a;
+        public static final int mainNavbar_mainPageNotifyTv=0x7f08001c;
         public static final int mainNavbar_mmlIv=0x7f080019;
-        public static final int mainNavbar_mmrIv=0x7f080021;
-        public static final int menu_exit=0x7f080026;
-        public static final int menu_login=0x7f080024;
-        public static final int menu_refresh=0x7f080025;
+        public static final int mainNavbar_mmrIv=0x7f080023;
+        public static final int mainNavbar_reserveBt=0x7f080021;
+        public static final int mainNavbar_reserveFl=0x7f080020;
+        public static final int mainNavbar_reserveNotifyTv=0x7f080022;
+        public static final int menu_exit=0x7f080028;
+        public static final int menu_login=0x7f080026;
+        public static final int menu_refresh=0x7f080027;
         public static final int mlAy_msgListLv=0x7f080010;
         public static final int mlAy_noNotifyTv=0x7f08000f;
         public static final int msgAy_content=0x7f08000e;
@@ -156,16 +161,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  欢迎界面相关字符串 
          */
         public static final int dialogUpdateSoftTitleTxt=0x7f050005;
-        public static final int dlAy_noDishNotify=0x7f050035;
+        public static final int dlAy_noDishNotify=0x7f050036;
         /**  点菜列表界面 
          */
-        public static final int dlAy_titleTvTxt=0x7f050034;
+        public static final int dlAy_titleTvTxt=0x7f050035;
         public static final int dummy_button=0x7f050001;
         public static final int dummy_content=0x7f050002;
-        public static final int gobackBtTxt=0x7f05003a;
+        public static final int gobackBtTxt=0x7f05003b;
         /**  公用字符串 
          */
-        public static final int loadingMore=0x7f050038;
+        public static final int loadingMore=0x7f050039;
         public static final int loagiAy_passwdHintTxt=0x7f050013;
         public static final int loginAy_autoLoginCbTxt=0x7f05000e;
         public static final int loginAy_loginBtTxt=0x7f05000f;
@@ -182,27 +187,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  主菜单相关 
          */
         public static final int mainNavbar_mainPageBtTxt=0x7f050032;
+        public static final int mainNavbar_reserveBtTxt=0x7f050034;
         public static final int menu_exitTxt=0x7f05002c;
         /**  系统菜单相关 
          */
         public static final int menu_loginTxt=0x7f05002a;
         public static final int menu_refreshTxt=0x7f05002b;
-        public static final int mlAy_noMsgNotify=0x7f050037;
+        public static final int mlAy_noMsgNotify=0x7f050038;
         /**  消息列表界面 
          */
-        public static final int mlAy_titleTvTxt=0x7f050036;
-        public static final int money_yuan=0x7f050039;
+        public static final int mlAy_titleTvTxt=0x7f050037;
+        public static final int money_yuan=0x7f05003a;
         public static final int pdUpdateSoftMsgTxt=0x7f050009;
-        public static final int settingAy_loginBtTxt=0x7f05003e;
-        public static final int settingAy_passwdHintTxt=0x7f050042;
-        public static final int settingAy_registerBtTxt=0x7f05003f;
-        public static final int settingAy_restaurantIdHintTxt=0x7f050040;
-        public static final int settingAy_restaurantIdLable=0x7f05003c;
+        public static final int settingAy_loginBtTxt=0x7f05003f;
+        public static final int settingAy_passwdHintTxt=0x7f050043;
+        public static final int settingAy_registerBtTxt=0x7f050040;
+        public static final int settingAy_restaurantIdHintTxt=0x7f050041;
+        public static final int settingAy_restaurantIdLable=0x7f05003d;
         /**  设置界面 
          */
-        public static final int settingAy_titleTvTxt=0x7f05003b;
-        public static final int settingAy_userNameHintTxt=0x7f050041;
-        public static final int settingAy_userNameLable=0x7f05003d;
+        public static final int settingAy_titleTvTxt=0x7f05003c;
+        public static final int settingAy_userNameHintTxt=0x7f050042;
+        public static final int settingAy_userNameLable=0x7f05003e;
         public static final int title_activity_main=0x7f050003;
         public static final int urlErr_fileNotFoundTxt=0x7f050031;
         /**  访问网络状态提示信息 

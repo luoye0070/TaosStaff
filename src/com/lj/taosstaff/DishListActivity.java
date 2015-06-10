@@ -1,5 +1,6 @@
 package com.lj.taosstaff;
 
+import com.lj.taosstaff.broadcast.BroadcastReceiverCustom;
 import com.lj.taosstaff.common.OptionsMenuProcess;
 import com.lj.taosstaff.LoginActivity;
 import com.lj.taosstaff.common.ActivityCallBackInterface;
@@ -24,6 +25,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -56,6 +58,8 @@ public class DishListActivity extends Activity implements ActivityCallBackInterf
 	static String baseUrlStr = "/staff/dishList";
 	static String urlStr = "/staff/dishList";
 	
+	BroadcastReceiverCustom brc=null;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -75,12 +79,15 @@ public class DishListActivity extends Activity implements ActivityCallBackInterf
         //初始化一个导航菜单
         mnm=new MainNavbarMenu(this, AppConstant.MNMAIndex.DishListActivity);
 		initInstance();
+		
+		//注册广播监听器
+		brc=new BroadcastReceiverCustom(this);
+		registerReceiver(brc, new IntentFilter(AppConstant.BroadcastActions.UPDATE_DISH_LIST));
 	}
 	
 	/***************************************
 	 * 初始化操作
 	 ****************************************/
-	@JavascriptInterface
 	private void initInstance() {
 		mainAy_gsWv = (WebView) findViewById(R.id.mainAy_gsWv);
 		webLoadingLL = (LinearLayout) findViewById(R.id.webLoadingLL);

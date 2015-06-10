@@ -41,7 +41,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-@SuppressLint("JavascriptInterface")
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class MainActivity extends Activity implements ActivityCallBackInterface {
 	ActivityManager am=null;//activity管理类
@@ -70,6 +69,14 @@ public class MainActivity extends Activity implements ActivityCallBackInterface 
 		baseUrlStr = new InternetEnv().getBaseUrl(getApplicationContext())+"/staff";
 		urlStr = new InternetEnv().getBaseUrl(getApplicationContext())+"/staff";
 		
+		//从消息列表界面获取订单ID
+		Intent intent=getIntent();
+		long orderId=intent.getLongExtra(AppConstant.IntentExtraName.ORDER_ID, 0);
+		if(orderId>0){
+			baseUrlStr += "/orderShow?orderId="+orderId;
+			urlStr += "/orderShow?orderId="+orderId;
+		}
+		
 		//初始化一个搜索栏
         //msb=new MainSearchBar(this);
         //初始化一个导航菜单
@@ -80,7 +87,6 @@ public class MainActivity extends Activity implements ActivityCallBackInterface 
 	/***************************************
 	 * 初始化操作
 	 ****************************************/
-	@JavascriptInterface
 	private void initInstance() {
 		mainAy_gsWv = (WebView) findViewById(R.id.mainAy_gsWv);
 		webLoadingLL = (LinearLayout) findViewById(R.id.webLoadingLL);

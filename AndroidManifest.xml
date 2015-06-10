@@ -38,6 +38,8 @@
         <activity android:name="com.lj.taosstaff.MainActivity"></activity>
         <activity android:name="com.lj.taosstaff.SettingActivity"></activity>
         <activity android:name="com.lj.taosstaff.DishListActivity"></activity>
+        <activity android:name="com.lj.taosstaff.MessageListActivity"></activity>
+        <activity android:name="com.lj.taosstaff.MessageActivity"></activity>
         
         <service android:name="com.lj.taosstaff.service.MessageService" 
     	    android:exported="false" 
@@ -45,6 +47,13 @@
     	    <intent-filter android:priority="1000"></intent-filter>
     	</service>
     	<service android:name="com.lj.taosstaff.service.BroadcastService" android:process=":br"></service>
+    
+    	<!-- <receiver android:name="lj.cms.broadcast.TimeBroadcastReceiver"> 
+	        <intent-filter> 
+	        	<action android:name="android.intent.action.USER_PRESENT" />  
+	        </intent-filter> 
+	    </receiver>  -->
+	    
     </application>
 
 </manifest>
